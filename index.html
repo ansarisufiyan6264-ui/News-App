@@ -1,0 +1,48 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News App</title>
+
+        <link rel="stylesheet" href = "news.css">
+ </head>
+ <body>
+    <!--- Header-->
+    <header>
+        <h1>📰 NewsHub </h1>
+
+        <div Class="search-box">
+            <input 
+                type = "text"
+                id = "searchInput"
+                placeholder="Search News..."
+            >
+            
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+    <!---Categories-->
+    <section class="categories">
+        <button id="homeBtn" class="category-btn">🏠 For You</button>
+        <button class="category-btn" data-category="general">General</button>
+        <button class="category-btn" data-category="business">Business</button>
+        <button class="category-btn" data-category="technology">Technology</button>
+        <button class="category-btn" data-category="sports">Sports</button>
+        <button class="category-btn" data-category="health">Health</button>
+        <button class="category-btn" data-category="entertainment">Entertainment</button>
+        <button id="favouritesBtn">❤️ Favourites</button>
+    </section>
+
+    <!---Loading-->
+    <div id="loading"></div>
+
+    <!--news countainer-->
+    <main id="newsContainer">
+        <!-- News cards will come here -->
+    </main>
+
+    <script src="news.js"></script>
+ </body>
+</html>
